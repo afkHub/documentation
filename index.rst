@@ -23,6 +23,7 @@ Final Project Test
    :maxdepth: 2
    :caption: Main:
    
+   rst/intro
    rst/deneme
    rst/modules
    
