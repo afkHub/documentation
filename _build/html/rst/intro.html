@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Group 2 &mdash; Save Attributes 1.0 documentation</title>
+  <title>GMT456 GROUP 2 INTRO &mdash; Save Attributes 1.0 documentation</title>
   
 
   
@@ -32,6 +32,7 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
         <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
@@ -87,7 +88,16 @@
             
               <p class="caption"><span class="caption-text">Main:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Group 2</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">GMT456 GROUP 2 INTRO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#authors">Authors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interface">Interface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#case-1">Case 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#case-2">Case 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#case-3">Case 3</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="deneme.html">SOME TESTINGS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">FUNCTIONS</a></li>
 </ul>
@@ -138,13 +148,13 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Group 2</li>
+      <li>GMT456 GROUP 2 INTRO</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/rst/intro.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/rst/intro.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -157,20 +167,68 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="group-2">
-<h1>Group 2<a class="headerlink" href="#group-2" title="Permalink to this headline">¶</a></h1>
-<p><em><strong>Authors</strong></em><br />Ahmet Fırat Karaoğlu : karaoglu&#64;email.com<br />Metehan Ergen : metehan.ergenn&#64;gmail.com</p>
-<p>Hello everyone ! we have contributed new features to a QGIS plugin called “save_attributes”. You may find a brief information about the plugin below,</p>
-<p><em><strong>Interface</strong></em><br /><img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/GUI.png" width ="500" /></p>
+  <div class="section" id="gmt456-group-2-intro">
+<h1>GMT456 GROUP 2 INTRO<a class="headerlink" href="#gmt456-group-2-intro" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="authors">
+<h2>Authors<a class="headerlink" href="#authors" title="Permalink to this headline">¶</a></h2>
+<p>Ahmet Fırat Karaoğlu : <a class="reference external" href="mailto:karaoglu&#37;&#52;&#48;email&#46;com">karaoglu<span>&#64;</span>email<span>&#46;</span>com</a>
+Metehan Ergen : <a class="reference external" href="mailto:metehan&#46;ergenn&#37;&#52;&#48;gmail&#46;com">metehan<span>&#46;</span>ergenn<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+<p>Hello everyone! We have contributed new features to a QGIS plugin called “save_attributes”. You may find a brief information about the plugin below,</p>
+</div>
+<div class="section" id="interface">
+<h2>Interface<a class="headerlink" href="#interface" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default">
+<img alt="../_images/GUI.png" src="../_images/GUI.png" />
+</div>
 <p>You could select the shapefile from the interface (Input layer part). And there will be 3 main cases,</p>
-<p><em><strong>Case 1</strong></em> <br/>If the input layer geometry is line; the plugin will compute the shortest and real distance among features, azimuth and reverse azimuth between lines’ start points and end points. And also draw the shortest line with its length. See below,</p>
-<p><img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/line_1feat.JPG" width ="500" /><br/><img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/lines_attr.JPG" width ="350" /></p>
-<p>If there is more than one feature on layer. It will also show the features which could possibly be a polygon.<br /><img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/line_mult.JPG" width ="450" /><br/><img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/azimuth.png" width ="450" /></p>
-<p><em><strong>Case 2</strong></em> <br/>If the input layer is point. It will check whether feature number is greater than 2. If it is the case, it  will calculate the minimum and maxiumum distannce among all points and draw the lines related to them. See below,</p>
-<p><img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/minmax.JPG" width ="500" /><br/><img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/point_attr.JPG" width ="430" /></p>
-<p><em><strong>Case 3</strong></em> <br/>If the input layer is polygon, the plugin computes the area and perimeter of the poligons and show in the table with inserting.
-<img alt="Image" src="https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/area-peri.png" /></p>
-<p><br/><br/><br/>Note: We used this to be able to add our university logo to the GUI: https://gis.stackexchange.com/questions/381661/image-adding-problem-to-qgis-plugin-gui-with-qt-designer (You may need to run the “compile.bat” file in the folder according to you for the logo.)</p>
+<div class="section" id="case-1">
+<h3>Case 1<a class="headerlink" href="#case-1" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>If the input layer geometry is line; the plugin will compute the shortest and real distance among features, azimuth and reverse azimuth between lines’ start points and end points. And also draw the shortest line with its length. See below,</p>
+</div></blockquote>
+<div class="figure align-default">
+<img alt="../_images/line_1feat.jfif" src="../_images/line_1feat.jfif" />
+</div>
+<div class="figure align-default">
+<img alt="../_images/lines_attr.jfif" src="../_images/lines_attr.jfif" />
+</div>
+<dl class="simple">
+<dt><br/></dt><dd><p>If there is more than one feature on layer. It will also show the features which could possibly be a polygon.</p>
+</dd>
+</dl>
+<div class="figure align-default">
+<img alt="../_images/line_mult.jfif" src="../_images/line_mult.jfif" />
+</div>
+<div class="figure align-default">
+<img alt="../_images/azimuth.png" src="../_images/azimuth.png" />
+</div>
+</div>
+<div class="section" id="case-2">
+<h3>Case 2<a class="headerlink" href="#case-2" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>If the input layer is point. It will check whether feature number is greater than 2. If it is the case, it  will calculate the minimum and maxiumum distannce among all points and draw the lines related to them. See below,</p>
+</div></blockquote>
+<div class="figure align-default">
+<img alt="../_images/minmax.jfif" src="../_images/minmax.jfif" />
+</div>
+<div class="figure align-default">
+<img alt="../_images/point_attr.jfif" src="../_images/point_attr.jfif" />
+</div>
+</div>
+<div class="section" id="case-3">
+<h3>Case 3<a class="headerlink" href="#case-3" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>If the input layer is polygon, the plugin computes the area and perimeter of the poligons and show in the table with inserting.</p>
+</div></blockquote>
+<div class="figure align-default">
+<img alt="../_images/area-peri.png" src="../_images/area-peri.png" />
+</div>
+<p><br/>
+<br/>
+<br/>
+Note: We used this to be able to add our university logo to the GUI: <a class="reference external" href="https://gis.stackexchange.com/questions/381661/image-adding-problem-to-qgis-plugin-gui-with-qt-designer">https://gis.stackexchange.com/questions/381661/image-adding-problem-to-qgis-plugin-gui-with-qt-designer</a> (You may need to run the “compile.bat” file in the folder according to you for the logo.)</p>
+</div>
+</div>
 </div>
 
 

@@ -22,28 +22,6 @@
  ***************************************************************************/
 """
 
-
-import timeit
-
-from qgis.PyQt.QtCore import QSettings, QTranslator, QCoreApplication
-from qgis.PyQt.QtGui import QIcon
-from qgis.PyQt.QtWidgets import QAction, QFileDialog, QMessageBox #
-from qgis.core import *
-from osgeo import ogr, osr, gdal
-import os
-from PyQt5.QtCore import QVariant
-from qgis.utils import iface
-
-from .great_distance import *
-
-
-# Initialize Qt resources from file resources.py
-from .resources import *
-# Import the code for the dialog
-from .save_attributes_dialog import SaveAttributesDialog
-import os.path
-
-
 class SaveAttributes:
     """
     

@@ -60,3 +60,16 @@ Here is something I want to talk about::
         """
 		
 		
+.. rubric:: Footnotes
+
+.. [#f1] Text of the first footnote.
+.. [#f2] Text of the second footnote.
+
+.. This is a comment.
+
+.. meta::
+   :keywords: backup
+   :keywords lang=en: pleasefindthiskey pleasefindthiskeytoo
+   :keywords lang=de: bittediesenkeyfinden
+
+		
